@@ -493,19 +493,21 @@ p {
 .work__title {
   margin-bottom: 50px;
 
+  color: var(--secondary-color-text);
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
-.work .work-list {
+.work-list {
   display: flex;
   flex-wrap: wrap;
 
   margin-left: -30px;
   margin-top: -30px;
 }
-.work-list > .item {
+.work-list__item {
   position: relative;
 
   flex-basis: calc(100% / 3 - 30px);
@@ -513,7 +515,7 @@ p {
   margin-left: 30px;
   margin-top: 30px;
 }
-.work .work-pic {
+.work-list__pic {
   display: block;
   max-width: 100%;
 }
@@ -526,7 +528,7 @@ p {
 
   transform: translateY(-100%);
 }
-.work-overlay .text {
+.work-list__text {
   padding-top: 27px;
 
   color: var(--primary-white-color);
