@@ -48,6 +48,8 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* блок утилита */
 .list {
   padding-left: 0;
   margin: 0;
@@ -63,15 +65,13 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-
-  /* outline: 1px solid tomato; */
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* Переход css */
+/* Переход css, блок-утилита*/
 .transition-link {
   transition-property: color, fill;
   transition-duration: 250ms;
@@ -86,7 +86,7 @@ p {
   border-bottom-style: solid;
   border-bottom-color: var(--border-color);
 }
-.accent {
+.logo__accent {
   color: var(--accent-color);
 }
 .logo {
@@ -98,39 +98,33 @@ p {
   font-size: 26px;
   line-height: 1.19;
 }
-.navigation .link {
-  /* outline: 1px solid tomato; */
-
+.navigation__link {
   color: var(--secondary-color-text);
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.navigation,
-.adds {
-  /* outline: 1px solid tomato; */
-}
+
 .logo {
   display: block;
-  /* outline: 1px solid tomato; */
 }
-.navigation .link,
-.adds .link {
+.navigation__link,
+.adds__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.navigation .link:hover,
-.navigation .link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--accent-color);
 }
-.navigation .current {
+.navigation__link--current {
   position: relative;
 
   color: var(--accent-color);
 }
-.navigation .current::after {
+.navigation__link--current::after {
   position: absolute;
   bottom: 0;
   display: block;
@@ -146,23 +140,22 @@ p {
   display: flex;
   margin-left: auto;
 }
-.navigation .item:not(:last-child),
-.adds .item:not(:last-child) {
+.navigation__item:not(:last-child),
+.adds__item:not(:last-child) {
   margin-right: 50px;
 }
-.adds .link {
+.adds__link {
   display: flex;
   align-items: center;
 
-  /* outline: 1px solid tomato; */
   color: inherit;
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.adds .link:hover,
-.adds .link:focus {
+.adds__link:hover,
+.adds__link:focus {
   color: var(--accent-color);
 }
 .page-header > .container,
@@ -174,12 +167,12 @@ p {
 .site-nav {
   align-items: center;
 }
-.adds .adds-icon {
+.adds__icon {
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
-.adds-link:hover .adds-icon,
-.adds-link:focus .adds-icon {
+.adds__link:hover .adds__icon,
+.adds__link:focus .adds__icon {
   fill: var(--accent-color);
 }
 
