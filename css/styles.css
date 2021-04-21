@@ -190,7 +190,7 @@ p {
 .hero {
   text-align: center;
 }
-.hero-bg {
+.hero__bg {
   margin-left: auto;
   margin-right: auto;
   height: 600px;
@@ -206,9 +206,8 @@ p {
     url(../images/bg-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: contain; */
 }
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
 
   color: var(--primary-white-color);
@@ -219,7 +218,7 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero .button {
+.hero__button {
   padding: 10px 32px;
   min-width: 200px;
 
