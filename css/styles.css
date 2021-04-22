@@ -265,7 +265,7 @@ p {
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -316,7 +316,7 @@ p {
 .form-modal-wrapper {
   padding: 40px;
 }
-.form-modal-wrapper .form-text {
+.modal__text {
   margin-bottom: 12px;
 
   color: var(--secondary-color-text);
@@ -326,16 +326,16 @@ p {
   font-weight: 700;
   font-style: normal;
 }
-.form-modal .form-label {
+.form-modal__label {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.form-modal .textarea-label {
+.form-modal__label--textarea {
   margin-bottom: 25px;
 }
-.form-modal .form-span {
+.form-modal__span {
   margin-bottom: 4px;
   font-style: normal;
   font-weight: 400;
@@ -343,7 +343,7 @@ p {
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-.form-modal .form-input {
+.form-modal__input {
   padding: 12px 42px;
   height: 40px;
   border: 1px solid var(--form-modal-grey);
@@ -354,26 +354,25 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-modal .form-input:focus,
-.form-modal .form-textarea:focus {
+.form-modal__input:focus,
+.form-modal__textarea:focus {
   border: 1px solid var(--accent-color);
   outline: 0;
 }
-.form-modal .icon {
+.form-icon__svg {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  /* fill: var(--secondary-color-text); */
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-modal .form-input:focus + .form-icon {
+.form-modal__input:focus + .form-icon {
   fill: var(--accent-color);
 }
-.form-modal .form-textarea {
+.form-modal__textarea {
   padding: 12px 16px;
   height: 120px;
   border: 1px solid var(--form-modal-grey);
@@ -384,8 +383,7 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-modal .form-textarea::placeholder {
-  /* padding-left: 83px; */
+.form-modal__textarea::placeholder {
   color: var(--form-modal-textarea);
   font-style: normal;
   font-weight: 400;
@@ -393,15 +391,15 @@ p {
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-.form-modal .form-field {
+.form-modal__field {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.form-modal .policy {
+.form-modal__policy {
   color: var(--accent-color);
 }
-.form-modal .checkbox {
+.checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -411,17 +409,17 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.form-modal .policy-label {
+.form-modal__policy-label {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
-.form-modal .checkbox:checked + .policy-icon {
+.checkbox:checked + .policy-icon {
   background-color: var(--accent-color);
   border: none;
 }
-.form-modal .policy-icon {
+.policy-icon {
   margin-right: 8px;
   display: flex;
   justify-content: center;
@@ -431,19 +429,15 @@ p {
   border: 2px solid var(--secondary-color-text);
   border-radius: 2px;
 }
-.form-modal .policy-icon > .icon-check {
+.policy-icon > .policy-icon__check {
   fill: transparent;
 }
-.form-modal .checkbox:checked + * .icon-check {
+.checkbox:checked + * .policy-icon__check {
   fill: var(--primary-white-color);
 }
-.form-modal .form-button {
+.form-modal__button {
   padding: 10px 56px;
   min-width: 200px;
-
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .wrapper-btn {
   display: flex;
@@ -588,8 +582,6 @@ p {
 .team-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
-  /* padding-left: auto;
-  padding-right: auto; */
 }
 .social-networks {
   display: flex;
@@ -600,16 +592,6 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-/* .social-networks-link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 50%;
-} */
-
 .social-networks__link {
   width: 44px;
   height: 44px;

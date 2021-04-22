@@ -527,69 +527,69 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close" data-modal-close>
-          <svg class="icon-close" width="18" height="18">
+          <svg class="close__icon" width="18" height="18">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <div class="form-modal-wrapper">
-          <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+          <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
           <form class="form-modal">
-            <label class="form-label">
-              <span class="form-span">Имя</span>
-              <span class="form-field">
-                <input type="text" name="name" class="form-input" />
+            <label class="form-modal__label">
+              <span class="form-modal__span">Имя</span>
+              <span class="form-modal__field">
+                <input type="text" name="name" class="form-modal__input" />
                 <span class="form-icon">
-                  <svg class="icon" width="18" height="18">
+                  <svg class="form-icon__svg" width="18" height="18">
                     <use href="./images/sprite.svg#icon-person"></use>
                   </svg>
                 </span>
               </span>
             </label>
-            <label class="form-label">
-              <span class="form-span">Телефон</span>
-              <span class="form-field">
-                <input type="tel" name="phone" class="form-input" />
+            <label class="form-modal__label">
+              <span class="form-modal__span">Телефон</span>
+              <span class="form-modal__field">
+                <input type="tel" name="phone" class="form-modal__input" />
                 <span class="form-icon">
-                  <svg class="icon" width="18" height="18">
+                  <svg class="form-icon__svg" width="18" height="18">
                     <use href="./images/sprite.svg#icon-phone"></use>
                   </svg>
                 </span>
               </span>
             </label>
-            <label class="form-label">
-              <span class="form-span">Почта</span>
-              <span class="form-field">
-                <input type="email" name="email" class="form-input" />
+            <label class="form-modal__label">
+              <span class="form-modal__span">Почта</span>
+              <span class="form-modal__field">
+                <input type="email" name="email" class="form-modal__input" />
                 <span class="form-icon">
-                  <svg class="icon" width="18" height="18">
+                  <svg class="form-icon__svg" width="18" height="18">
                     <use href="./images/sprite.svg#icon-email"></use>
                   </svg>
                 </span>
               </span>
             </label>
-            <label class="form-label textarea-label">
-              <span class="form-span">Комментарий</span>
+            <label class="form-modal__label form-modal__label--textarea">
+              <span class="form-modal__span">Комментарий</span>
               <textarea
                 name="feedback"
-                class="form-textarea"
+                class="form-modal__textarea"
                 placeholder="Введите текст"
               ></textarea>
             </label>
 
-            <label class="policy-label">
+            <label class="form-modal__policy-label">
               <input type="checkbox" name="policy-agree" class="checkbox" />
               <span class="policy-icon">
-                <svg class="icon-check" width="16" height="15">
+                <svg class="policy-icon__check" width="16" height="15">
                   <use href="./images/sprite.svg#icon-check"></use>
                 </svg>
               </span>
 
               Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a href="#" class="policy">Условия договора</a>
+              <a href="#" class="form-modal__policy">Условия договора</a>
             </label>
             <div class="wrapper-btn">
-              <button type="submit" class="form-button button">
-                <span class="form-button-text">Отправить</span>
+              <button type="submit" class="form-modal__button button">
+                <span class="button__text">Отправить</span>
               </button>
             </div>
           </form>
