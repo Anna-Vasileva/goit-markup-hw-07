@@ -222,10 +222,6 @@ p {
 .hero__button {
   padding: 10px 32px;
   min-width: 200px;
-
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button {
   color: var(--primary-white-color);
@@ -237,6 +233,9 @@ p {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
 
@@ -774,10 +773,6 @@ p {
 .form__button {
   padding: 10px 29px;
   min-width: 200px;
-
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button__text {
   display: flex;
@@ -796,34 +791,33 @@ p {
   line-height: 1.62;
   letter-spacing: 0.03em;
 }
-.portfolio .filter {
+.filter {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio .filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
-.portfolio .button {
+.filter__button {
   padding: 6px 22px;
 
   background-color: var(--button-grey-color);
 
   color: var(--secondary-color-text);
-  border-radius: 4px;
-  border: none;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  box-shadow: none;
 
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio .button:hover,
-.portfolio .button:focus {
+.filter__button:hover,
+.filter__button:focus {
   background-color: var(--accent-color);
 
   color: var(--primary-white-color);
@@ -906,8 +900,6 @@ p {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .portfolio-overlay .text-overlay {
   padding: 63px 24px;
