@@ -690,15 +690,15 @@ p {
 
   background-color: var(--basement-bg-color);
 }
-.basement .adds-item:not(:last-child) {
+.basement__adds-item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
 }
-.basement-adds-value {
+.basement-adds__value {
   color: var(--primary-white-color);
   font-style: normal;
 }
-.basement .link {
+.basement-adds__link {
   color: var(--accent-color-text);
   font-style: normal;
 }
@@ -708,8 +708,8 @@ p {
 .basement__logo--color {
   color: var(--primary-white-color);
 }
-.basement-adds .link:hover,
-.basement-adds .link:focus {
+.basement-adds__link:hover,
+.basement-adds__link:focus {
   color: var(--accent-color);
 }
 
@@ -717,11 +717,11 @@ p {
   display: flex;
   align-items: baseline;
 }
-.basement__wrapper:nth-child(1) {
+.basement-wrapper:nth-child(1) {
   margin-right: 70px;
 }
 
-.basement .basement-text {
+.basement-text {
   margin-bottom: 20px;
 
   text-transform: uppercase;
@@ -777,7 +777,7 @@ p {
 .basement .form-text {
   margin-bottom: 16px;
 }
-.basement__wrapper:nth-child(2) {
+.basement-wrapper:nth-child(2) {
   margin-right: auto;
 }
 
