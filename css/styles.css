@@ -488,18 +488,18 @@ p {
 /* /QUALITY */
 
 /* WORK */
-.work {
-  padding-top: 0;
-}
-.work__title {
+.page-title {
   margin-bottom: 50px;
 
   color: var(--secondary-color-text);
 
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
+}
+.work {
+  padding-top: 0;
 }
 .work-list {
   display: flex;
@@ -568,16 +568,7 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team__title {
-  margin-bottom: 50px;
 
-  color: var(--secondary-color-text);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
 .team-list__people {
   margin-bottom: 10px;
 
@@ -655,19 +646,19 @@ p {
 .clients-list {
   display: flex;
 }
-.clients .clients-icon {
+.clients-list__icon {
   fill: var(--social-networks);
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:focus .clients-list__icon {
   fill: var(--accent-color);
 }
 
-.clients .clients-link {
+.clients-list__link {
   width: 170px;
   height: 90px;
   display: flex;
@@ -681,21 +672,11 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   border: 1px solid var(--accent-color);
 }
-.clients__title {
-  margin-bottom: 50px;
-
-  color: var(--secondary-color-text);
-
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-}
-.clients .item:not(:last-child) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
 /* /CLIENTS */
@@ -732,11 +713,11 @@ p {
   color: var(--accent-color);
 }
 
-.basement .container {
+.basement__container {
   display: flex;
   align-items: baseline;
 }
-.basement .wrapper:nth-child(1) {
+.basement__wrapper:nth-child(1) {
   margin-right: 70px;
 }
 
@@ -796,11 +777,10 @@ p {
 .basement .form-text {
   margin-bottom: 16px;
 }
-.basement .wrapper:nth-child(2) {
+.basement__wrapper:nth-child(2) {
   margin-right: auto;
 }
-.basement .wrapper:nth-child(3) {
-}
+
 .basement .form-button {
   padding: 10px 29px;
   min-width: 200px;
